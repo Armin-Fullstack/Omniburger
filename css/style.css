@@ -13,10 +13,10 @@
 
   --- 3. COLORS
   -Primary: #e67e22
-  -Tints:
-  -Shades:
+  -Tints: #fdf2e9
+  -Shades: #cf711f
   -Accents
-  -Grays: #555
+  -Grays: #555 #333
 
   --- 4. SHADOWAS
   --- 5. BORDER RADIUS
@@ -43,3 +43,67 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/* ----------------------------- */
+/* If we choose section-hero class as a container we couldn't create a fixed size container*/
+
+/* Hero Section */
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0; /* preserve the background color - we always do this when we have background color */
+}
+.hero {
+  display: grid; /* the same tool for layout across to entire page */
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  gap: 9.6rem; /* like padding*/
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.btn:link , .btn:visited {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  border-radius: 9px;
+
+}
+
+.btn--CTA:link , .btn--CTA:visited{
+  background-color: #e67e22;
+  color: white;
+}
+.btn--CTA:hover , .btn--CTA:active{
+  background-color: #cf711f;
+}
+.btn--outline:link , 
+.btn--outline:visited {
+background-color: #fff;
+color: #555;
+}
+.btn--outline:hover, 
+.btn--outline:active {
+background-color: #fdf2e9;
+box-shadow: inset 0 0 0 3px #fff;
+}
+
+.hero-image {
+  width: 100%;
+}
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+/* --------------------------- */
