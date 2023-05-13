@@ -31,7 +31,7 @@
   --- 4. SHADOWAS
   --- 5. BORDER RADIUS
     Default: 9px
-
+    Medium: 11px
     
 */
 
@@ -137,4 +137,7 @@ box-shadow: inset 0 0 0 3px #fff;
 }
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+strong {
+  font-weight: 500;
 }

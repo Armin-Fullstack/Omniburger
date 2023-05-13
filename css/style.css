@@ -172,3 +172,54 @@ z-index: -1;
 .step-img {
   width: 35%;
 }
+/********************/
+/* MEALS SECTION */
+/********************/
+.meals-section {
+  padding: 9.6rem 0;
+}
+.meal-img {
+  width: 100%;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+}
+.tag {
+  background-color: #51cf66;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.meal-title {
+font-size: 2.4rem;
+color: #333;
+font-weight: 600;
+margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
