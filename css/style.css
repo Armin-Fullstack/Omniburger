@@ -56,6 +56,24 @@ body {
 /********************/
 /* REUSABLE COMPONENTS */
 /********************/
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2 , 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3 , 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4 , 1fr);
+}
 .btn:link , .btn:visited {
   display: inline-block;
   padding: 1.6rem 3.2rem;
@@ -136,14 +154,14 @@ transition: all 0.3s;
 .hero {
   display: grid; /* the same tool for layout across to entire page and also the size */
   grid-template-columns: 1fr 1fr;
-  max-width: 130rem;
+  max-width: 130rem; /*I'd like to be wider than the other contents*/
   margin: 0 auto;
   padding: 0 3.2rem;
   gap: 9.6rem; /* like padding*/
   align-items: center;
 }
 
-.hero-heading {
+.heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
@@ -188,4 +206,13 @@ transition: all 0.3s;
   color: #cf711f;
   font-weight: 700;
 }
-/* --------------------------- */
+
+/********************/
+/* HOW IT WORKS SECTION */
+/********************/
+.section-how {
+  padding: 4.8rem 0 9.6rem 0;
+}
+.step-img {
+  width: 50%;
+}
