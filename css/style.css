@@ -47,42 +47,16 @@ body {
 /* ----------------------------- */
 /* If we choose section-hero class as a container we couldn't create a fixed size container*/
 
-/* Hero Section */
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0; /* preserve the background color - we always do this when we have background color */
-}
-.hero {
-  display: grid; /* the same tool for layout across to entire page and also the size */
-  grid-template-columns: 1fr 1fr;
-  max-width: 130rem;
-  margin: 0 auto;
-  gap: 9.6rem; /* like padding*/
-  align-items: center;
-}
-
-.hero-heading {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-}
+/********************/
+/* REUSABLE COMPONENTS */
+/********************/
 .btn:link , .btn:visited {
   display: inline-block;
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
   border-radius: 9px;
   font-weight: 600;
-
 }
-
 .btn--CTA:link , .btn--CTA:visited{
   background-color: #e67e22;
   color: white;
@@ -100,13 +74,63 @@ color: #555;
 background-color: #fdf2e9;
 box-shadow: inset 0 0 0 3px #fff;
 }
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+/********************/
+/* HEADER */
+/********************/
+.header {
+  background-color: #fdf2e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem; /*bc we want header to be sticky*/
+  padding: 0 4.8rem;
+}
+.header-logo {
+  height: 2.2rem;
+}
+
+
+
+
+
+/********************/
+/* HERO SECTION */
+/********************/
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0; /* preserve the background color - we always do this when we have background color */
+}
+.hero {
+  display: grid; /* the same tool for layout across to entire page and also the size */
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  gap: 9.6rem; /* like padding*/
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
 
 .hero-image {
   width: 100%;
 }
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
+
 .delivered-meals {
   display: flex;
   align-items: center;
