@@ -299,3 +299,40 @@ margin-bottom: 3.2rem;
 .pricing-section {
   padding: 9.6rem 0;
 }
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+
+}
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+font-size: 6.2rem;
+font-weight: 600;
+color: #333;
+margin-bottom: 1.6rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
