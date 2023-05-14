@@ -117,6 +117,7 @@ body {
   font-size: 2rem;
   border-radius: 9px;
   font-weight: 600;
+  transition: all 0.3s;
 }
 .btn--CTA:link , .btn--CTA:visited{
   background-color: #e67e22;
