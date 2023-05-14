@@ -309,6 +309,26 @@ margin-bottom: 3.2rem;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
 }
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan--complete::after {
+  content: "best value";
+  text-transform: uppercase;
+  background-color: #ffd43b;
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
 .plan-header {
   text-align: center;
   margin-bottom: 4.8rem;
