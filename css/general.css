@@ -24,7 +24,7 @@
   --- 3. COLORS
   -Primary: #e67e22
   -Tints: #fdf2e9 #fae5d3 #eb984e
-  -Shades: #cf711f
+  -Shades: #cf711f #45260a
   -Accents
   -Grays: #6f6f6f #555 #333
 
@@ -46,6 +46,11 @@
   list-style-type: none;
   text-decoration: none;
 }
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+}
+
 /* -------------------------- */
 html {
   font-size: 62.5%;
@@ -115,13 +120,25 @@ margin-bottom: 9.6rem;
   margin-bottom: 1.6rem;
 
 }
-.btn:link , .btn:visited {
+.btn:link , .btn:visited , .btn{
   display: inline-block;
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
   border-radius: 9px;
   font-weight: 600;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
 }
 .btn--CTA:link , .btn--CTA:visited{
   background-color: #e67e22;
