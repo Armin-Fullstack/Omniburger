@@ -442,3 +442,9 @@ margin-bottom: 1.6rem;
   outline: none;
   box-shadow: 0 0 0 8px rgba(253, 242, 233, 0.5);
 }
+/********************/
+/* CTA SECTION */
+/********************/
+.footer {
+  padding: 9.6rem 0;
+}
