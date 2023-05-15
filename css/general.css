@@ -23,12 +23,13 @@
 
   --- 3. COLORS
   -Primary: #e67e22
-  -Tints: #fdf2e9 #fae5d3
+  -Tints: #fdf2e9 #fae5d3 #eb984e
   -Shades: #cf711f
   -Accents
   -Grays: #6f6f6f #555 #333
 
   --- 4. SHADOWAS
+  0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   --- 5. BORDER RADIUS
     Default: 9px
     Medium: 11px
