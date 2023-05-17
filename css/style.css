@@ -15,7 +15,7 @@
 }
 .main-nav-list {
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 .main-nav-link:link , 
