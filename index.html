@@ -10,7 +10,9 @@
 <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+  <script src="js/app.js" defer></script>
   <title>Ominfood</title>
 </head>
 <body>
@@ -26,6 +28,13 @@
         <li><a href="#" class="main-nav-link nav-CTA">Try for free</a></li>
       </ul>
     </nav>
+    <!-- Hamburger Button  -->
+    <button id="btn-menu" class="hamburger">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+
   </header>
   <main>
   <!-- Hero Section -->
