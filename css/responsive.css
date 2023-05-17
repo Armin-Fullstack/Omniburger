@@ -81,4 +81,10 @@
   .btn--form {
     margin-top: 1.2rem;
   }
+  .main-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
