@@ -1,6 +1,8 @@
 const btnMenu = document.getElementById("btn-menu")
 const mobileMenu = document.querySelector(".mobile-menu")
 const allLinks = document.querySelectorAll("a:link")
+const sectionHeroEl = document.querySelector(".section-hero")
+
 function showMenu() {
   btnMenu.classList.toggle("open") 
   mobileMenu.classList.toggle("show-menu")
@@ -32,3 +34,18 @@ allLinks.forEach(element => {
     
   })
 })
+
+const obs = new IntersectionObserver( (enteries) => {
+  if(!enteries[0].isIntersecting) {
+    document.body.classList.add("sticky")
+  } else {
+    document.body.classList.remove("sticky")
+  }
+}, 
+{
+  // in the viewport
+root: null,
+threshold: 0,
+rootMargin: "-80px"
+}) 
+obs.observe(sectionHeroEl)
