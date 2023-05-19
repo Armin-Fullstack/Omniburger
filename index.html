@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script src="js/app.js" defer></script>
   <title>Ominfood</title>
 </head>
@@ -21,11 +22,11 @@
     <a href="#"><img src="img/omnifood-logo.png" alt="Omnifood Logo" class="header-logo"></a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a href="#" class="main-nav-link">How it works</a></li>
-        <li><a href="#" class="main-nav-link">Meals</a></li>
-        <li><a href="#" class="main-nav-link">Testimonials</a></li>
-        <li><a href="#" class="main-nav-link">Pricing</a></li>
-        <li><a href="#" class="main-nav-link nav-CTA">Try for free</a></li>
+        <li><a href="#how" class="main-nav-link">How it works</a></li>
+        <li><a href="#meals" class="main-nav-link">Meals</a></li>
+        <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+        <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+        <li><a href="#cta" class="main-nav-link nav-CTA">Try for free</a></li>
       </ul>
     </nav>
     <!-- Hamburger Button  -->
@@ -38,11 +39,11 @@
     <!-- mobile menu  -->
     <nav class="mobile-menu">
       <ul class="mobile main-nav-list">
-        <li><a href="#" class="main-nav-link">How it works</a></li>
-        <li><a href="#" class="main-nav-link">Meals</a></li>
-        <li><a href="#" class="main-nav-link">Testimonials</a></li>
-        <li><a href="#" class="main-nav-link">Pricing</a></li>
-        <li><a href="#" class="main-nav-link nav-CTA">Try for free</a></li>
+        <li><a href="#how" class="main-nav-link">How it works</a></li>
+        <li><a href="#meals" class="main-nav-link">Meals</a></li>
+        <li><a href="#testimonials" class="main-nav-link">Testimonials</a></li>
+        <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+        <li><a href="#cta" class="main-nav-link nav-CTA">Try for free</a></li>
       </ul>
     </nav>
   </header>
@@ -53,8 +54,8 @@
       <div class="hero-text-box">
         <h1 class="heading-primary">A healthy meal delivered to your door, every single day</h1>
         <p class="hero-description">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!</p>
-        <a href="#" class="btn btn--CTA margin-right-sm">Start eating well</a>
-        <a href="#" class="btn btn--outline">Learn more &darr;</a>
+        <a href="#cta" class="btn btn--CTA margin-right-sm">Start eating well</a>
+        <a href="#how" class="btn btn--outline">Learn more &darr;</a>
         <div class="delivered-meals">
           <div class="delivered-imgs">
             <img src="img/customers/customer-1.jpg" alt="Customer photo">
@@ -86,7 +87,7 @@
     </div>
   </div>
   <!-- How it works section  -->
-  <section class="section-how">
+  <section class="section-how" id="how">
     <div class="container">
       <span class="subheading">How it works</span>
       <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -129,7 +130,7 @@
     </div>
   </section>
   <!-- Meals section  -->
-  <section class="meals-section">
+  <section class="meals-section" id="meals">
     <div class="container center-text">
       <span class="subheading">Meals</span>
       <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -184,7 +185,7 @@
     </div>
   </section>
   <!-- Testimonials section  -->
-  <section class="testimonials-section">
+  <section class="testimonials-section" id="testimonials">
     <!-- Testimonials  -->
       <div class="testimonials">
         <span class="subheading">testimonials</span>
@@ -254,7 +255,7 @@
       </div>
   </section>
   <!-- Pricing section  -->
-    <section class="pricing-section">
+    <section class="pricing-section" id="pricing">
       <div class="container">
       <span class="subheading">Pricing</span>
       <h2 class="heading-secondary">Eating well without breaking the bank</h2>
@@ -322,7 +323,7 @@
       </div>
     </section>
     <!-- CTA section  -->
-    <div class="cta-section">
+    <div class="cta-section" id="cta">
       <div class="container">
         <!-- fix: padding of the container is the No long effecting in this box anymore -->
         <div class="cta">
