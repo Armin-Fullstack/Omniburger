@@ -26,9 +26,8 @@ allLinks.forEach(element => {
       sectionEl.scrollIntoView({
         behavior: "smooth"
       })
-      if(element.classList.contains("main-nav-link")) {
-        btnMenu.classList.toggle("open") 
-        mobileMenu.classList.toggle("show-menu")
+      if(element.classList.contains("main-nav-link") && btnMenu.classList.contains("open")) {
+        showMenu() 
       }
     }
     
