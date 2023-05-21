@@ -122,6 +122,9 @@ transition: all 0.3s;
   display: flex;
   flex-direction: column;
 }
+.mobile-menu .main-nav-link {
+  font-size: 2.4rem;
+}
 .show-menu {
   display: flex;
   transform: translateX(0%);
