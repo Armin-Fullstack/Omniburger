@@ -17,10 +17,12 @@
 <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" defer/>
   <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-  <script src="js/app.js" defer></script>
+<script src="js/app.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
   <title>Ominfood &mdash; Never cook again!</title>
 </head>
 <body>
@@ -76,7 +78,26 @@
         </div>
       </div>
       <div class="hero-image-box">
-        <img src="img/hero.png" alt="Woman are enjoying food, meals in storage container, and food bowls on a table" class="hero-image">
+        <!-- Swiper -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/Hero-images/mike-PxJ9zkM2wdA-unsplash.jpg" alt="Woman are enjoying food, meals in storage container, and food bowls on a table" class="hero-image">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Hero-images/amirali-mirhashemian-jh5XyK4Rr3Y-unsplash.jpg" alt="Woman are enjoying food, meals in storage container, and food bowls on a table" class="hero-image">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Hero-images/ilya-mashkov-mkVa2hLJgnI-unsplash.jpg" alt="Woman are enjoying food, meals in storage container, and food bowls on a table" class="hero-image">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Hero-images/pexels-natan-machado-fotografia-gastronômica-15010291.jpg" alt="Woman are enjoying food, meals in storage container, and food bowls on a table" class="hero-image">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -415,5 +436,19 @@
       
     </div>
   </footer>
+  <script>
+    var swiper = new Swiper(".swiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
+  </script>
 </body>
 </html>
