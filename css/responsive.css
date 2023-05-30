@@ -47,9 +47,7 @@
     padding: 0 8rem;
     gap: 6.4rem
   }
-  .hero-image {
-    width: 60%;
-  }
+
   .hero-image-box , .hero-text-box {
     text-align: center;
   }
@@ -131,9 +129,7 @@
     .btn:link , .btn:visited , .btn{
       padding: 2.4rem 1.6rem;
     }
-    .hero-image {
-      width: 80%;
-    }
+ 
     .featured-logo {
       height: 1.2rem;
     }
@@ -163,4 +159,20 @@
     .cta-text-box {
       padding: 3.2rem;
     }
+}
+  /* em didn't work for Swiper js  */
+@media  (min-width: 600px) {
+  .swiper {
+    width: 85%;
+}
+}
+@media  (min-width: 680px) {
+  .swiper {
+    width: 60%;
+}
+}
+@media  (min-width: 945px) {
+  .swiper {
+    width: 100%;
+}
 }

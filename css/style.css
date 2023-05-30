@@ -156,9 +156,18 @@ transition: all 0.3s;
   margin-bottom: 4.8rem;
 }
 
-.hero-image {
+ .swiper {
   width: 100%;
+  border-radius: 15px;
 }
+
+.swiper-slide img {
+      width: 100%;
+      height: 36rem;
+      object-fit: cover;
+      display: block;
+    } 
+
 
 .delivered-meals {
   display: flex;
@@ -562,9 +571,7 @@ margin-bottom: 1.6rem;
   line-height: 1.6;
   margin-top: auto;
 }
-.address-col {
 
-}
 .footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
@@ -578,12 +585,7 @@ margin-bottom: 1.6rem;
 .address {
   margin-bottom: 2.4rem;
 }
-.contact-tell {
 
-}
-.contact-mail {
-
-}
 .footer-nav {
   display: flex;
   flex-direction: column;

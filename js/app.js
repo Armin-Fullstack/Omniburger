@@ -1,3 +1,24 @@
+import Swiper from "swiper";
+import 'swiper/css';
+import { Autoplay, Pagination } from 'swiper';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// Initialize Swiper.js
+var swiper = new Swiper(".mySwiper", {
+  modules: [Pagination, Autoplay],
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
+
 const btnMenu = document.getElementById("btn-menu")
 const mobileMenu = document.querySelector(".mobile-menu")
 const allLinks = document.querySelectorAll("a:link")
