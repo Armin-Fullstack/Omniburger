@@ -32,7 +32,10 @@
 }
 /* ------------------------- */
 .header-logo {
-  height: 2.2rem;
+  font-size: 3.6rem;
+  color: #212529;
+  letter-spacing: 2.75px;
+
 }
 .main-nav-list {
   display: flex;
