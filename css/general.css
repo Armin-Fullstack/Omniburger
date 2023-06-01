@@ -22,9 +22,9 @@
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
   --- 3. COLORS
-  -Primary: #e67e22
-  -Tints: #fdf2e9 #fae5d3 #eb984e
-  -Shades: #cf711f #45260a
+  -Primary: #e67e22 #f7ce18
+  -Tints: #fdf2e9 #fae5d3  #eb984e #e03131 #f03e3e
+  -Shades: #cf711f #45260a #fa5252
   -Accents
   -Grays: #888 #767676 #6f6f6f #555 #333
 
@@ -118,7 +118,8 @@ margin-bottom: 9.6rem;
 }
 .subheading {
   display: block;
-  color: #cf711f;
+  /* color: #cf711f; */
+  color: #e03131;
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -137,7 +138,8 @@ margin-bottom: 9.6rem;
   cursor: pointer;
 }
 .btn--form {
-  background-color: #45260a;
+  /* background-color: #45260a; */
+  background-color:#e03131;
   color: #fdf2e9;
   align-self: end;
   padding: 1.2rem;
@@ -147,11 +149,13 @@ margin-bottom: 9.6rem;
   color: #45260a;
 }
 .btn--CTA:link , .btn--CTA:visited{
-  background-color: #e67e22;
+  /* background-color: #e67e22; */
+  background-color: #e03131;
   color: white;
 }
 .btn--CTA:hover , .btn--CTA:active{
-  background-color: #cf711f;
+  /* background-color: #cf711f; */
+   background-color: #f03e3e
 }
 .btn--outline:link , 
 .btn--outline:visited {
@@ -165,7 +169,7 @@ box-shadow: inset 0 0 0 3px #fff;
 }
 .link:link , .link:visited {
   display: inline-block;
-  color: #e67e22;
+  color: #e03131;
   border-bottom: 1px solid currentColor;
   padding-bottom: 0.125rem;
   transition: all 0.3s;
