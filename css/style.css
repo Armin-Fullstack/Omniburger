@@ -247,31 +247,9 @@ transition: all 0.3s;
   justify-content: center;
   align-items: center;
 }
-.step-img-box::before ,
- .step-img-box::after {
-  content: "";
-  display: block;
-  /* height: 100%; it won't work */
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
-}
-.step-img-box::before {
-  width: 60%;
-  padding-bottom: 60%;
-  z-index: -2;
-  background-color: #fdf2e9;
-}
-.step-img-box::after {
-background-color: #fae5d3;
-width: 45%;
-padding-bottom: 45%;
-z-index: -1;
-}
+
 .step-img {
-  width: 35%;
+  width: 100%;
 }
 /********************/
 /* MEALS SECTION */
