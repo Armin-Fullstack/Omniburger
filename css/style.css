@@ -385,6 +385,7 @@ margin-bottom: 3.2rem;
 }
 .galley-item {
   overflow: hidden;
+  border-radius: 11px;
 }
 .gallery-img {
   display: block; /*Images are inline that's why there is a space between images*/
