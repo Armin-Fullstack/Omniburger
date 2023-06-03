@@ -1,5 +1,8 @@
 /* 1344px / 16px = 84em */
 @media (max-width: 84em) {
+  html {
+  font-size: 56.52%;
+ }
   .hero {
     max-width: 120rem;
   }
@@ -11,9 +14,9 @@
   }
 }
 @media (max-width: 75em) {
- html {
-  font-size: 56.52%;
- }
+  html {
+    font-size: 50%;
+  }
  .grid {
   column-gap: 4.8rem;
   row-gap: 6.4rem;
@@ -39,9 +42,7 @@
 }
 
 @media (max-width: 59em) {
-  html {
-    font-size: 50%;
-  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 8rem;
@@ -80,7 +81,7 @@
     margin-top: 1.2rem;
   }
   .main-nav {
-    display: none;
+    display: none
   }
   .hamburger {
     display: block;

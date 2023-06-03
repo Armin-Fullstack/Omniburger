@@ -3,6 +3,7 @@ import 'swiper/css';
 import { Autoplay, Pagination } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import i18next from "i18next";
 
 const btnMenu = document.getElementById("btn-menu")
 const mobileMenu = document.querySelector(".mobile-menu")
@@ -33,7 +34,6 @@ function showMenu() {
   btnMenu.classList.toggle("open") 
   mobileMenu.classList.toggle("show-menu")
 }
-
 
 btnMenu.addEventListener("click" , showMenu)
 
@@ -95,9 +95,45 @@ window.addEventListener("scroll" , () => {
   })
 })
 
+i18next.init({
+  lng: "en",
+  fallbacking: "en",
+  debug: true,
+  resources: {
+    en: {
+      translation: {}
+    },
+    es: {
+      translation: {}
+    },
+  }
+})
+
+const loadLanguageData = lang => {
+  fetch(`./locales/${lang}/translation.json`)
+  .then(response => response.json())
+  .then(data => {
+    i18next.addResources(lang , "translation" , data)
+  })
+  .catch(error => console.log(error))
+}
+loadLanguageData("en")
+loadLanguageData("es")
+
 spanishBtn.addEventListener("click" , () => {
   languageActive.style.left = "11rem"
+  i18next.changeLanguage("es" , (err , t) => {
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+      element.innerHTML = t(element.dataset.i18n)
+    })
+  })
 })
+
 englishBtn.addEventListener("click" , () => {
   languageActive.style.left = "0"
+  i18next.changeLanguage("en" , (err , t) => {
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+      element.innerHTML = t(element.dataset.i18n)
+    })
+  })
 })
