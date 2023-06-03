@@ -577,3 +577,33 @@ margin-bottom: 1.6rem;
 .footer-nav-link:active {
   color: #555;
 }
+.to-top {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1.6rem;
+  right: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  font-size: 2.4rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.scrollUp-btn {
+  background-color: #fff;
+  color: #000;
+  width: calc(100% - 1.2rem);
+  height: calc(100% - 1.2rem);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.to-top.active-to-top {
+  opacity: 1;
+  bottom: 2.4rem;
+}
