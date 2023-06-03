@@ -86,6 +86,7 @@
   .hamburger {
     display: block;
   }
+
 }
 @media (max-width: 44em) {
   .grid--3-cols , .grid--4-cols {
@@ -160,6 +161,11 @@
     .cta-text-box {
       padding: 3.2rem;
     }
+}
+@media  (max-width: 23em) {
+  html {
+    font-size: 40%
+  }
 }
   /* em didn't work for Swiper js  */
 @media  (min-width: 600px) {
