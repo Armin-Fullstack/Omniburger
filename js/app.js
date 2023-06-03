@@ -10,6 +10,9 @@ const allLinks = document.querySelectorAll("a:link")
 const sectionHeroEl = document.querySelector(".section-hero")
 const toTop = document.querySelector(".to-top")
 const scrollUpBtn = document.querySelector(".scrollUp-btn")
+const englishBtn = document.querySelector(".english-btn")
+const spanishBtn = document.querySelector(".spanish-btn")
+const languageActive = document.querySelector(".language-active")
 
 // Initialize Swiper.js
 var swiper = new Swiper(".mySwiper", {
@@ -92,3 +95,9 @@ window.addEventListener("scroll" , () => {
   })
 })
 
+spanishBtn.addEventListener("click" , () => {
+  languageActive.style.left = "11rem"
+})
+englishBtn.addEventListener("click" , () => {
+  languageActive.style.left = "0"
+})

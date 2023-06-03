@@ -13,6 +13,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "i18next": "^22.5.0",
     "swiper": "^9.3.2"
   }
 }
