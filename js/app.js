@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import i18next from "i18next";
 
+// Selectors
 const btnMenu = document.getElementById("btn-menu")
 const mobileMenu = document.querySelector(".mobile-menu")
 const allLinks = document.querySelectorAll("a:link")
@@ -30,6 +31,7 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
+// Show menu function
 function showMenu() {
   btnMenu.classList.toggle("open") 
   mobileMenu.classList.toggle("show-menu")
@@ -37,6 +39,7 @@ function showMenu() {
 
 btnMenu.addEventListener("click" , showMenu)
 
+// Implemented section scroll
 allLinks.forEach(element => {
   element.addEventListener("click" , function(e) {
     e.preventDefault()
@@ -76,6 +79,7 @@ rootMargin: "-80px"
 }) 
 obs.observe(sectionHeroEl)
 
+// Scroll up btn functionality
 window.addEventListener("scroll" , () => {
   const clientHeight = document.body.clientHeight
   const windowHeight = window.innerHeight
@@ -95,6 +99,7 @@ window.addEventListener("scroll" , () => {
   })
 })
 
+// Initialize i18next
 i18next.init({
   lng: "en",
   fallbacking: "en",
@@ -109,6 +114,7 @@ i18next.init({
   }
 })
 
+// Access to the json file
 const loadLanguageData = lang => {
   fetch(`./locales/${lang}/translation.json`)
   .then(response => response.json())
@@ -120,6 +126,7 @@ const loadLanguageData = lang => {
 loadLanguageData("en")
 loadLanguageData("es")
 
+// Change language
 spanishBtn.addEventListener("click" , () => {
   languageActive.style.left = "11rem"
   i18next.changeLanguage("es" , (err , t) => {
@@ -129,6 +136,7 @@ spanishBtn.addEventListener("click" , () => {
   })
 })
 
+// Change language
 englishBtn.addEventListener("click" , () => {
   languageActive.style.left = "0"
   i18next.changeLanguage("en" , (err , t) => {
