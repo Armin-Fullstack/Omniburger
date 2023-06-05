@@ -94,6 +94,8 @@ transition: all 0.3s;
   flex: 1;
   position: relative;
   box-shadow: none;
+  color: #555;
+  font-weight: 600;
 }
 
 .hamburger {
@@ -184,7 +186,6 @@ transition: all 0.3s;
   gap: 9.6rem; /* like padding*/
   align-items: center;
 }
-
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;

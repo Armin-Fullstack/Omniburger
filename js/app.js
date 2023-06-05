@@ -3,10 +3,10 @@ import "swiper/css";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import i18next from "i18next";
+import i18next, { changeLanguage } from "i18next";
 
- import enTranslation from "../locales/en/translation.json";
- import esTranslation from "../locales/es/translation.json";
+import enTranslation from "../locales/en/translation.json";
+import esTranslation from "../locales/es/translation.json";
 
 // Selectors
 const btnMenu = document.getElementById("btn-menu");
@@ -18,6 +18,7 @@ const scrollUpBtn = document.querySelector(".scrollUp-btn");
 const englishBtn = document.querySelector(".english-btn");
 const spanishBtn = document.querySelector(".spanish-btn");
 const languageActive = document.querySelector(".language-active");
+const typedText = document.querySelector(".typed-text");
 
 // Initialize Swiper.js
 var swiper = new Swiper(".mySwiper", {
@@ -121,15 +122,6 @@ i18next.init({
   },
 });
 
-// Access to the json file
-// const loadLanguageData = (lang) => {
-//   //i18next.addResources(lang, "translation", `${lang}Translation`);
-//   i18next.addResources("es", 'translation', esTranslation);
-//   //i18next.addResources("es", "translation", esTranslation);
-// };
-// loadLanguageData("en");
-// loadLanguageData("es");
-
 // Change language
 spanishBtn.addEventListener("click", () => {
   languageActive.style.left = "11rem";
@@ -139,7 +131,6 @@ spanishBtn.addEventListener("click", () => {
     });
   });
 });
-
 // Change language
 englishBtn.addEventListener("click", () => {
   languageActive.style.left = "0";
@@ -149,3 +140,20 @@ englishBtn.addEventListener("click", () => {
     });
   });
 });
+
+// typed functionality
+// Welcome to Omniburger, Where Every Bite is an Experience!
+
+let i = 0;
+function loadText() {
+  let text = "Welcome to Omniburger, Where Every Bite is an Experience!";
+  typedText.textContent += text.charAt(i);
+  i++;
+  setTimeout(loadText, 70);
+}
+loadText();
+
+const removeDisable = () => {
+  spanishBtn.removeAttribute("disabled");
+};
+setTimeout(removeDisable, 5000);
