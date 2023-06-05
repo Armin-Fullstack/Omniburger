@@ -330,6 +330,7 @@ text-align: center;
   font-size: 1.6rem;
   display: flex;
   gap: 1.6rem;
+  align-items: center
 }
 .meal-icon {
   font-size: 2.4rem;
