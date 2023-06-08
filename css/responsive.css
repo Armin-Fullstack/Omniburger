@@ -162,7 +162,7 @@
       padding: 3.2rem;
     }
 }
-@media  (max-width: 23em) {
+@media  (max-width: 25em) {
   html {
     font-size: 36%
   }
