@@ -75,7 +75,9 @@ transition: all 0.3s;
   width: 22rem;
   position: relative;
 }
-.language-active {
+.language-btn-container::before {
+  content: "";
+  display: inline-block;
   position: absolute;
   background-color: #e67e22;
   width: 11rem;
@@ -83,8 +85,12 @@ transition: all 0.3s;
   border-radius: 30px;
   left: 0;
   top: 0;
-  transition: all 0.5s;
+  transition: all 0.5s ease-out;
 }
+.language-btn-container.active-language::before {
+  left: calc(100% - 11rem);
+}
+
 .language-btn {
   background-color: transparent;
   border: none;

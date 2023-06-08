@@ -19,6 +19,7 @@ const englishBtn = document.querySelector(".english-btn");
 const spanishBtn = document.querySelector(".spanish-btn");
 const languageActive = document.querySelector(".language-active");
 const typedText = document.querySelector(".typed-text");
+const languageBtnContainer = document.querySelector(".language-btn-container")
 
 // Initialize Swiper.js
 var swiper = new Swiper(".mySwiper", {
@@ -124,7 +125,7 @@ i18next.init({
 
 // Change language
 spanishBtn.addEventListener("click", () => {
-  languageActive.style.left = "11rem";
+  languageBtnContainer.classList.toggle("active-language")
   i18next.changeLanguage("es", (err, t) => {
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       element.innerHTML = t(element.dataset.i18n);
@@ -133,7 +134,7 @@ spanishBtn.addEventListener("click", () => {
 });
 // Change language
 englishBtn.addEventListener("click", () => {
-  languageActive.style.left = "0";
+  languageBtnContainer.classList.toggle("active-language")
   i18next.changeLanguage("en", (err, t) => {
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       element.innerHTML = t(element.dataset.i18n);
